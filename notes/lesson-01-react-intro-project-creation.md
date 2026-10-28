@@ -52,41 +52,83 @@ function Counter() {
 
 ---
 
-## Setting Up the Project
+## Creating a React Project (Step by Step)
 
 ### Step 1: Check Node.js and npm
 ```bash
 node -v
 npm -v
 ```
+Both should print version numbers.
+
 > React's tools need Node **20.19 or newer**. npm comes with Node and downloads libraries.
 
-### Step 2: Create the project with Vite
+### Step 2: Open a terminal in the folder where the project should be created
+
+For example, the `React` folder. The new project folder is created inside whichever folder the terminal is in.
+
+### Step 3: Create the project with Vite
 ```bash
 npm create vite@latest my-react-app
 ```
 
-The prompts and the answers used:
+- `npm create vite@latest` runs Vite's project creator (the newest version).
+- `my-react-app` is the **project name**. It becomes the folder name, so choose any name you like.
+- If it asks `Ok to proceed? (y)`, type `y` and press Enter.
 
-| Prompt | Choice |
+### Step 4: Answer the questions
+
+Use the **arrow keys** to move and **Enter** to choose.
+
+| Question | Choose |
 |---|---|
-| Select a framework | React |
-| Select a variant | JavaScript |
-| Which linter to use | Oxlint |
-| Install with npm and start now | Yes |
+| Select a framework | **React** |
+| Select a variant | **JavaScript** |
+| Which linter to use | **Oxlint** |
+| Install with npm and start now | **Yes** |
 
 > **Vite** is the tool that builds and runs the project quickly. **Oxlint** is a fast code checker that points out mistakes.
 
-### Step 3: Install and run
-```bash
-cd my-react-app
-npm install
-npm run dev
+Choosing **Yes** at the last question does two things for you: it runs `npm install` (downloads the libraries) and `npm run dev` (starts the server).
+
+### Step 5: See the app
+
+When the terminal shows this, the server is running:
+
+```
+VITE v8.x.x  ready in 300 ms
+
+➜  Local:   http://localhost:5173/
 ```
 
 Open **http://localhost:5173/** in the browser. The Vite + React starter page appears with a counter button.
 
-> Press **Control + C** in the terminal to stop the server. Run `npm run dev` again to start it.
+---
+
+## Running the Project Again Later
+
+If you closed the terminal or pressed **Control + C**, the server has stopped. To start it again:
+
+```bash
+cd my-react-app
+npm run dev
+```
+
+- `cd my-react-app` moves the terminal into the project folder. Check that the prompt shows `my-react-app %`.
+- `npm run dev` starts the development server.
+- `npm install` is only needed if the `node_modules` folder is missing, for example after downloading the project from GitHub.
+
+> Press **Control + C** in the terminal to stop the server.
+
+### Commands in order (summary)
+
+```bash
+node -v                                  # check Node
+npm create vite@latest my-react-app      # create the project (choose React, JavaScript, Oxlint, Yes)
+cd my-react-app                          # go into the project folder
+npm install                              # download libraries (done automatically if you chose Yes)
+npm run dev                              # start the server
+```
 
 ---
 
