@@ -287,20 +287,6 @@ export default App
 
 ---
 
-## Common Mistakes
-
-| Mistake | What happens | Fix |
-|---|---|---|
-| Forgetting `BrowserRouter` in `main.jsx` | Error: `useRoutes() may be used only in the context of a <Router>` | Wrap `<App />` with `BrowserRouter` |
-| Using `<a href>` for internal pages | The page reloads on every click | Use `<Link to="...">` |
-| Writing `element={Home}` | Nothing renders | Write `element={<Home />}` |
-| Lowercase component names (`home`) | React treats it as an HTML tag | Start names with a capital letter |
-| Wrong import path | Blank page or "Failed to resolve import" | Match the path to the real file location |
-| Typing `link` instead of `Link` | `Link is not defined` | Import and use the exact name `Link` |
-| Installing in the wrong folder | Cannot find module `react-router-dom` | Run `npm i` inside `my-react-app` |
-
----
-
 ## Quick Reference
 
 | Code | Meaning |
