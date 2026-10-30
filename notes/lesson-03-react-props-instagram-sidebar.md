@@ -266,18 +266,6 @@ If any part is missing, the style does not show.
 
 ---
 
-## Errors that happened while building this lesson
-
-| Error / problem | Cause | Fix |
-|---|---|---|
-| *Adjacent JSX elements must be wrapped* | Three elements returned side by side | Wrap them in one `<div>` or `<> </>` |
-| `const items` written inside the JSX | Code placed between `<div>` and `</div>` | Move it above `return` |
-| `Failed to resolve import './Sidebar'` | Import path did not match the file name | Match the path to the real file |
-| `Cannot read properties of undefined (reading 'map')` | Sent `items`, received `item` | Prop names must match exactly on both sides |
-| Styles not applied | `className` missing on the element | Add `className="..."` |
-
----
-
 ## Quick Reference
 
 | Code | Meaning |
