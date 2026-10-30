@@ -196,17 +196,6 @@ hmr update /src/App.jsx
 
 ---
 
-## Common Mistakes
-
-| Mistake | Fix |
-|---|---|
-| Running `npm` commands in the wrong folder | Check the prompt: it must say `my-react-app %` |
-| Typing `npm dev` | The command is `npm run dev` |
-| Typing `mpn` instead of `npm` | Read the error message, it suggests the correct command |
-| Pressing Control + C and wondering why the page is dead | Control + C stops the server. Run `npm run dev` again |
-
----
-
 ## Quick Reference
 
 | Command | What it does |
